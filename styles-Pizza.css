@@ -1,0 +1,61 @@
+/* Fonts */
+@font-face {
+    font-family: Banana;
+    src: url(SunnySpellsBasicRegular-Yz1Wv.ttf);
+}
+
+/* Header */
+.bg-banana {
+    background-image: url(banana.jpg);
+}
+
+.text-bananasafe {
+    font-size: 8em;
+    font-family: Banana;
+    font-weight: bolder;
+    color: rgb(29, 106, 122);
+    text-shadow: 2px 2px rgb(241, 191, 243);
+    opacity: .95;
+}
+
+.perfectcurve {
+    position: relative;
+    overflow: hidden;
+    height: auto;
+}
+
+.perfectcurve::before {
+    border-radius: 100%;
+    position: absolute;
+    background-image: url(banana.jpg);
+    right: -300px;
+    left: -300px;
+    top: -200px;
+    content: '';
+    bottom: 0;
+
+}
+
+/* Body */
+
+.bg-potato {
+    background: linear-gradient(#f4abab, #f8f8a7);
+    height: 100vh;
+}
+
+/* Background onclick extension */
+.extend-banana {
+    height: 120vh;
+    background: linear-gradient(#f4abab, #f8f8a7);
+}
+
+/* Potato was wrong */
+.potatohack {
+    background-color: red;
+    animation: blinking 1ms infinite;
+}
+@keyframes blinking {
+    0% {background-color: red;}
+    50% {background-color: rgb(175, 51, 126);}
+    100% {background-color: rgb(155, 57, 79);}
+}
